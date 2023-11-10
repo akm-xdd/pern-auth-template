@@ -30,10 +30,11 @@ The `users` table in the PostgreSQL database has the following schema:
 
 1. Clone the repository
 2. Install dependencies with `npm install`
-3. Set up your PostgreSQL database and update the connection details in the configuration file
-4. Run the server with `npm start`
-5. Navigate to `localhost:8000` in your browser to access the application
-6. Use postman to test the API endpoints
+3. Set up your `.env` file (see below)
+4. Set up your PostgreSQL database and update the connection details in the configuration file
+5. Run the server with `npm start`
+6. Navigate to `localhost:8000` in your browser to access the application
+7. Use postman to test the API endpoints
 
 ## API Endpoints
 
@@ -44,6 +45,15 @@ The `users` table in the PostgreSQL database has the following schema:
 | /logout    | POST   | Log out the current user                       | Clears the cookies and resets the session                          |
 | /get-users | GET    | Get the users in the database                  | Not safe and not protected. Use this in your app at your own risk. |
 | /protected | GET    | A protected route that requires authentication | Requires authentication to access                                  |
+
+## .env File
+
+The `.env` file contains the following environment variables:
+
+- PORT - the port the server will run on, set to 8000 by default
+- SECRET - the secret used to sign the JWTs, set whatever you want
+- CLIENT_URL - the URL of the client application, set to `http://localhost:5173` for Vite enjoyers
+- SERVER_URL - the URL of the server, set to `http://localhost:8000` by default
 
 ## Feature Checklist/Roadmap/To-Do List
 
