@@ -30,7 +30,7 @@ The `users` table in the PostgreSQL database has the following schema:
 
 1. Clone the repository
 2. Install dependencies with `npm install`
-3. Set up your `.env` file (see below)
+3. Set up your `.env` file [see here](#env-File)
 4. Set up your PostgreSQL database and update the connection details in the configuration file
 5. Run the server with `npm start`
 6. Navigate to `localhost:8000` in your browser to access the application
