@@ -35,6 +35,16 @@ The `users` table in the PostgreSQL database has the following schema:
 5. Navigate to `localhost:8000` in your browser to access the application
 6. Use postman to test the API endpoints
 
+## API Endpoints
+
+| Endpoint   | Method | Description                                    | Note                                                               |
+| ---------- | ------ | ---------------------------------------------- | ------------------------------------------------------------------ |
+| /register  | POST   | Register a new user                            | Can work for both email and usernames                              |
+| /login     | POST   | Log in an existing user                        | Requires email and password                                        |
+| /logout    | POST   | Log out the current user                       | Clears the cookies and resets the session                          |
+| /get-users | GET    | Get the users in the database                  | Not safe and not protected. Use this in your app at your own risk. |
+| /protected | GET    | A protected route that requires authentication | Requires authentication to access                                  |
+
 ## Feature Checklist/Roadmap/To-Do List
 
 - [x] Basic authentication (register and login)
