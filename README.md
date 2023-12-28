@@ -40,11 +40,11 @@ The `users` table in the PostgreSQL database has the following schema:
 
 | Endpoint   | Method | Description                                    | Note                                                               |
 | ---------- | ------ | ---------------------------------------------- | ------------------------------------------------------------------ |
-| /register  | POST   | Register a new user                            | Can work for both email and usernames                              |
-| /login     | POST   | Log in an existing user                        | Requires email and password                                        |
-| /logout    | POST   | Log out the current user                       | Clears the cookies and resets the session                          |
-| /get-users | GET    | Get the users in the database                  | Not safe and not protected. Use this in your app at your own risk. |
-| /protected | GET    | A protected route that requires authentication | Requires authentication to access                                  |
+| api/v1/register  | POST   | Register a new user                            | Can work for both email and usernames                              |
+| api/v1/login     | POST   | Log in an existing user                        | Requires email and password                                        |
+| api/v1/logout    | POST   | Log out the current user                       | Clears the cookies and resets the session                          |
+| api/v1/get-users | GET    | Get the users in the database                  | Not safe and not protected. Use this in your app at your own risk. |
+| api/v1/protected | GET    | A protected route that requires authentication | Requires authentication to access                                  |
 
 ## .env File
 
@@ -60,6 +60,7 @@ The `.env` file contains the following environment variables:
 - [x] Basic authentication (register and login)
 - [x] A logout route
 - [ ] Basic authorization (protect routes) - in progress
+- [ ] Setup tutorial using React Redux - done but not updated
 - [ ] Sell the project to Facebook for $1 billion - also in progress
 - [ ] A better README - already in progress
 
