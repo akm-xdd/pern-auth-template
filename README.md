@@ -24,7 +24,7 @@ The `users` table in the PostgreSQL database has the following schema:
 | id          | SERIAL PRIMARY KEY | Unique identifier for each user       |
 | email       | VARCHAR(255)       | User's email address                  |
 | password    | VARCHAR(255)       | Hashed password                       |
-| created_at  | TIMESTAMP          | Date and time the account was created |
+| any other automatic field  | anything you want          | Any other automatic field such as created_at or last access which can be customized according to your needs  |
 
 ## Getting Started
 
